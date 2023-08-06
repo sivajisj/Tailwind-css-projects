@@ -1,0 +1,52 @@
+# this is Rockets Exploring website (SJ) - Created with Tailwindcss
+
+
+# tailwind css setup 
+
+<h3>step 1</h3>
+install node js (npm)
+<h3>step 2</h3>
+live server extension in VS Code
+<h3>step 3</h3>
+```js
+npx tailwindcss init
+```
+tailwindcss.config.js file created
+<h3>step 4</h3>
+create build directory
+```js
+mkdir build
+```
+create src directory
+```js
+mkdir src
+```
+inside src -> create index.html
+<h3>step 5</h3>
+inside  tailwindcss.config.js file 
+
+
+--> set path inside content:['./build/*.html']
+<h3>step 6</h3>
+inside source create input.css
+add these dependencies
+```
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;```
+
+
+
+# step 7 Run tailwindcss
+```
+npx tailwindcss -i ./src/input.css -o ./build/css/style.css
+```
+then css file will be created
+# personal notes
+
+1. first we need to set body=> class="min-h-screen" 
+2.  <code>bg-slate-50</code>
+3. <code>dark:bg-black dark:text-white </code> this means 
+this is dark mode and color is white,
+background color is black
